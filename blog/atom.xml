@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://meiti-x.github.io/front-lint/blog</id>
-    <title>My Site Blog</title>
+    <title>front-lint Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://meiti-x.github.io/front-lint/blog"/>
-    <subtitle>My Site Blog</subtitle>
-    <icon>https://meiti-x.github.io/front-lint/img/favicon.ico</icon>
+    <subtitle>front-lint Blog</subtitle>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://meiti-x.github.io/front-lint/blog/welcome</id>
