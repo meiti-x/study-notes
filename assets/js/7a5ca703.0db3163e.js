@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[8212],{4913:t=>{t.exports=JSON.parse('{"title":"React","slug":"/category/react","permalink":"/front-lint/docs/category/react","navigation":{"previous":{"title":"intro","permalink":"/front-lint/docs/Javascript/intro"},"next":{"title":"React","permalink":"/front-lint/docs/React/intro"}}}')}}]);
