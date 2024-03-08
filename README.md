@@ -1,41 +1,10 @@
-# Website
+# Front lint
+maybe i find a better name for future but for now, front lint is good enogh.
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+this project about tips we should check at our code review process and link to a one title in code review comments if person want to see more about the issue. currently its under heavy development, but these will be concepts that we cover them for next month:
 
-### Installation
+- React
+- Javascript
+- Typescript
+- Nextjs
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
