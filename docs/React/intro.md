@@ -150,7 +150,7 @@ For simple components, it's completely fine to just place everything into the co
 Once the component gets more complicated, with more and more data to fetch, more computed data to calculate, more static strings to format, effects to run, etc, the component might become quite a bit bloated - in this case it's advised to extract such logic into the component-specific hook.
 
 Component-specific hook is named strictly after the component (using the
-use<COMPONENT_NAME> convention) and is collocated within the component folder.
+`use<COMPONENT_NAME>` convention) and is collocated within the component folder.
 
 So, if there was some `MyAwesomeComponent.tsx `(or MyAwesomeComponent/index.tsx), the default component-specific hook file would be AwesomeComponent/useAwesomeComponent.ts. 
 
