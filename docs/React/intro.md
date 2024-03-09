@@ -198,7 +198,7 @@ array.length && ...
 // GOOD
 !!undefined && ..
 !!null && ...
-!!array.length && ...
+Array.isArray(array) && !!array.length && ...
 typeof someFunction === 'function' && ...
 Object.entries(obj).length > 0 && ...
 ~~~
@@ -223,8 +223,6 @@ Fetching data inside the useEffect hook might not fit the React mental model bec
 
 Instead of fetching data in useEffect, it's recommended to use a library like React Query, SWR, or Axios with a custom hook to manage data fetching. These libraries provide a more declarative and efficient way to handle data fetching, helping you maintain the React mental model and keep your components clean and easy to reason about.
 
-## Don't build blind branches in JSX
-
 
 
 ## Put functions outside the component
@@ -235,7 +233,7 @@ A much better approach is to put the function outside the component
 
 ## Don't use Context as global state manager
 
-
+n
 
 ## Don’t put JSX in custom hooks
 
@@ -245,7 +243,9 @@ And it is not used properly because it ispulled in another component at the top 
 
 ## Don’t import SVGs as JSX or directly in React
 
+If you import a SVG like in the image above, you will include the SVGs into the bundle which will make the app slow to load.
 
+Each SVG has hundreds of elements so when React generates the Fiber tree, you will end up with a giant object with thousands of unnecessary data which will increase the memory consumption.
 
 ## Destructure Props on component call
 
@@ -253,10 +253,34 @@ And it is not used properly because it ispulled in another component at the top 
 
 ## Avoid Nested Ternary Operators
 
+Nested ternaries are bad because they are hard to read and prone to errors.
 
+Ternary operators become hard to read after the first level.
 
 ## Use composition instead of Context
 
 
 
 ## Use virtualization for large lists
+
+Using virtualization in React can be highly beneficial for performance optimization, especially when dealing with large lists or tables. Virtualization is a technique that involves rendering only a small subset of the items in a list or table while giving the appearance of rendering the entire dataset. This is particularly useful when working with large amounts of data or when rendering a large number of components.
+
+
+
+## Remove all the Listeners When Unmounting Components
+
+Removing all event listeners when unmounting components in React is crucial to prevent memory leaks, improve performance, and avoid unexpected behavior. When you attach an event listener to a DOM element or a window object, it will persist even after the component is unmounted, unless you explicitly remove it.
+
+```react
+ useEffect(() => {
+    const handleClick = () => {
+      // do something on click
+    };
+
+    window.addEventListener('click', handleClick);
+
+    return () => {
+      window.removeEventListener('click', handleClick);
+    };
+  }, []);
+```
