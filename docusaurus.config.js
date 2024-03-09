@@ -7,7 +7,7 @@ const config = {
   url: 'https://meiti-x.github.io',
   baseUrl: '/software-handbook/',
   organizationName: 'meiti-x',
-  projectName: 'front-lint',
+  projectName: 'software-handbook',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
