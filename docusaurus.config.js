@@ -5,7 +5,7 @@ const config = {
   title: 'front-lint',
   tagline: 'increase your code quality',
   url: 'https://meiti-x.github.io',
-  baseUrl: '/front-lint/',
+  baseUrl: '/software-handbook/',
   organizationName: 'meiti-x',
   projectName: 'front-lint',
   onBrokenLinks: 'throw',
