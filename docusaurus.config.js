@@ -2,7 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'front-lint',
+  title: 'study-notes',
   tagline: 'increase your code quality',
   url: 'https://meiti-x.github.io',
   baseUrl: '/study-notes/',
@@ -23,7 +23,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/meiti-x/front-lint/tree/main',
+            'https://github.com/meiti-x/study-notes/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -47,7 +47,7 @@ const config = {
             label: 'Documents',
           },
           {
-            href: 'https://github.com/meiti-x/front-lint',
+            href: 'https://github.com/meiti-x/study-notes',
             label: 'GitHub',
             position: 'right',
           },
