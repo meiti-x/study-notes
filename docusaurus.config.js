@@ -3,13 +3,14 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'study-notes',
-  tagline: 'increase your code quality',
+  tagline: 'increase your code quality by reading my notes :-)',
   url: 'https://meiti-x.github.io',
   baseUrl: '/study-notes/',
   organizationName: 'meiti-x',
   projectName: 'study-notes',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -25,6 +26,7 @@ const config = {
           editUrl:
             'https://github.com/meiti-x/study-notes/tree/main',
         },
+        blog:false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -38,7 +40,6 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Front Lint',
         items: [
           {
             type: 'docSidebar',
