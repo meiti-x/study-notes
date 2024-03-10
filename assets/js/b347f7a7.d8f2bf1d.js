@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7768],{7149:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/front-lint/blog/tags/hello","allTagsPath":"/front-lint/blog/tags","count":2,"unlisted":false}')}}]);
